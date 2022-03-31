@@ -33,3 +33,4 @@ jobs:
     - name: Run tests with Python Unit Test 
       run: |
         python -m unittest cylinderTest.py
+        python -m unittest GeometryCalcWebTest.py
