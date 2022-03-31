@@ -33,19 +33,19 @@ The code will be dicussed and demonstrated in class.  Take notes!!!
 
 ## The Dependencies
 
-All applications have dependencies.   In other words, there is the code itself, like the GeometryCalcWeb.py and cylinder.py files, but also the other code that needed and necessary to run your application.
+All applications have **dependencies**.   In other words, there is the code itself, like the GeometryCalcWeb.py and cylinder.py files, but also the other code that is needed and necessary to run your application.
 
-All of the dependencies for the application are in the **requirements.txt** file.
+All of the dependencies for this application are in the **requirements.txt** file.
 
-Dependencies in Python application are usually handled like this.  For example, if an application needed the "numpy" module installed to do more advanced math functions.
+Dependencies in Python application are usually installed managed using a Python package manager such as PIP or Conda.  For example, if an application needed the "numpy" module installed to do more advanced math functions:
 
 (remember that on some system "pip3" must be used if you want to install the module for Python 3)
 
-**pip install numpy**
+`pip install numpy`
 
 If an Python app has multiple dependencies, they can all be put into file and then installed as such:
 
-**pip install -r requirements.txt**
+`pip install -r requirements.txt**`
 
 
 ## Running the Code
@@ -77,35 +77,39 @@ Go into the new directory that was created by the clone.  Use your favorite ligh
 
 Once in the new directory do this:
 
-**python -m venv venv**
+`python -m venv venv`
 
 This creates a new virtual environment.
 
 Now activate the virtual environment:
 
-Unix/Linux:  **source ./venv/bin/activate**
-Windows: **venv\Scripts\activate**
+Unix/Linux:  `source ./venv/bin/activate`
+Windows: `venv\Scripts\activate`
 
 Your prompt should look similar to this now:
 
-(venv) joeaxberg@macbookm1pro inet_4031_flask %
+*(venv) joeaxberg@macbookm1pro inet_4031_flask %*
 
 Now you have an isolated "virtual" Python environment.  Modules you install will only be installed for THIS application.  The system-wide module library will not be impacted.
 
 Install the **Dependencies**
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 Make sure there were no errors.
 
 Now run the application:
 
-python GeometryCalcWeb.py
+`python GeometryCalcWeb.py`
 
 There are lots of ways to run Flask apps, this is but one.
 
-Now open up a browser:
+Now open up a browser and go to:
 
 http://localhost:5000
 
-Or put in the IP of your laptop.  Either way point the URL to TCP port 5000.  By default Flask listens on 5000 so it doesn't interfere with other web servers you may have running like Apache or Nginx which listen on port 80 by default.
+Or put in the IP of your laptop instead of local host.  Either way point the URL to TCP port 5000.  By default Flask listens on 5000 so it doesn't interfere with other web servers you may have running like Apache or Nginx which listen on port 80 by default.
+
+# That's It!
+
+Please take the time to look through the code and understand it.  Better yet, show up to class and participate and learn, and understanding the code will be much easier.
