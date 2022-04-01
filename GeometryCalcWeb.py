@@ -41,6 +41,18 @@ def cylinderForm():
        return "User entered: Radius "+ str(radius) + " and Height: " + str(height) + ". <p>The Volume is: " + str(vol)
    return render_template("cylinder.html")
 
+#flask route for the cylinder calculations page
+@app.route("/sphere", methods = ["GET", "POST"])
+def cylinderForm():
+   if request.method == "POST":
+       # getting input with name = fname in HTML form
+       radius = request.form.get("rad")
+       # getting input with name = lname in HTML form 
+       height = request.form.get("hgt") 
+       vol = cylinder.volume(int(radius), int(height))
+       return "User entered: Radius "+ str(radius) + " and Height: " + str(height) + ". <p>The Volume is: " + str(vol)
+   return render_template("cylinder.html")
+
 #more code here for the rest of the calculators: sphere, cube, etc.
   
 if __name__=='__main__':   #more flask plumbing so the environment starts correctly
