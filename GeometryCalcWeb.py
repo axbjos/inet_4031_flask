@@ -41,17 +41,20 @@ def cylinderForm():
        return "User entered: Radius "+ str(radius) + " and Height: " + str(height) + ". <p>The Volume is: " + str(vol)
    return render_template("cylinder.html")
 
-#flask route for the cylinder calculations page
+#flask route for the sphere calculations page
+#the student needs to complete the code in sphere.py, write a unit test for sphere.py and
+#add a sphere.html template to the ./templates folder
 @app.route("/sphere", methods = ["GET", "POST"])
-def cylinderForm():
+def sphereForm():
    if request.method == "POST":
        # getting input with name = fname in HTML form
        radius = request.form.get("rad")
        # getting input with name = lname in HTML form 
        height = request.form.get("hgt") 
-       vol = cylinder.volume(int(radius), int(height))
+       vol = sphere.volume(int(radius), int(height))
        return "User entered: Radius "+ str(radius) + " and Height: " + str(height) + ". <p>The Volume is: " + str(vol)
-   return render_template("cylinder.html")
+       #where is the sphere.html file?
+   return render_template("sphere.html")
 
 #more code here for the rest of the calculators: sphere, cube, etc.
   
