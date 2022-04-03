@@ -14,11 +14,11 @@ def volume(rad, hi):
 
 def prompt():
     print()
-    print("----------------------------------------------------------")
+    print("-----------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND VOLUME & SURFACE AREA OF A CYLINDER")
-    print("----------------------------------------------------------")
-    radius = int(input("Please Enter the radius :"))
-    height = int(input("Please Enter the height :"))
+    print("-----------------------------------------------------------")
+    radius = int(input("Please Enter the radius : "))
+    height = int(input("Please Enter the height : "))
 
     print("\nThe Volume of a Cylinder = ", volume(radius, height))
 

@@ -10,6 +10,9 @@ class cylinderTest(unittest.TestCase):
     def test_volume2(self):
         assert(cylinder.volume(10,100) == 31415.926535897932)
 
+    def test_volume3(self):
+        assert(cylinder.volume(0,0) == 0.0)
+
     #failing test
     #def test_volume3(self):
         #assert(cylinder.volume(10,1000) == 0)
